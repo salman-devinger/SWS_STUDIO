@@ -1,4 +1,4 @@
 <?php
-header("Location: ./sws_pages/login.php"); /* Redirect browser */
+header("Location: ./login.php"); /* Redirect browser */
 exit();
 ?>

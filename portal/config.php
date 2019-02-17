@@ -1,6 +1,6 @@
 <?php
-$dbhost = "166.62.10.228";
-$dbuser = "swscourse";
+$dbhost = "sql188.main-hosting.eu.";
+$dbuser = "u754512327_sws";
 $dbpass = "salman123";
-$dbname = "dbtuts";
+$dbname = "u754512327_sws";
 ?>
