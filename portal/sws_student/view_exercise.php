@@ -102,8 +102,8 @@
                   <td><a href="./download.php?filename=<?php echo $db_fld['FILE_NAME'] ;?>" >DOWNLOAD</a></td>
                   <td><a href="../upload/<?php echo $db_fld['FILE_NAME'] ?>" target="_blank">PLAY</a></td>
                   <td>1</td>
-                  <td><?php echo $db_fld["CATEGORY_ID"];?></td>
-                  <td><?php echo $db_fld["SUB_CATEGORY_ID"];?></td>
+                  <td><?php echo $db_fld["CATEGORY_NAME"];?></td>
+                  <td><?php echo $db_fld["SUB_CATEGORY_NAME"];?></td>
                   <td><?php echo $db_fld["ARTIST"];?></td>
                   <td><?php echo $db_fld["FILE_TYPE"];?></td>
                 </tr>
