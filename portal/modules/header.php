@@ -172,14 +172,14 @@
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-table"></i> <span>Tables</span>
+            <i class="fa fa-table"></i> <span>App</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../sws_pages/index.php">><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="../sws_pages/index.php"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="../sws_pages/app_gallery.php"><i class="fa fa-circle-o"></i> Gallery</a></li>
+            <li><a href="../sws_pages/app_gallery.php"><i class="fa fa-circle-o"></i> Upload</a></li>
           </ul>
         </li>
         <li>

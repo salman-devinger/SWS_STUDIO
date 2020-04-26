@@ -9,6 +9,7 @@ echo(strtoupper($string));
 include '../config.php';
 
 if(isset($_POST['categoryId'])) {
+  $counter = 0;
   $categoryId = $_POST['categoryId'];
   $ser_con=mysqli_connect($dbhost, $dbuser, $dbpass, $dbname)
   or die('cannot connect to the server');
@@ -18,11 +19,63 @@ if(isset($_POST['categoryId'])) {
   $res=mysqli_query($ser_con,$sql);
   while($data=mysqli_fetch_array($res))
   {
-  echo "<option value='".$data['SUB_CATEGORY_ID']."'>".$data['SUB_CATEGORY_NAME']."</option>";
+    if ($counter==0){
+      echo "<option selected='selected' value='".$data['SUB_CATEGORY_ID']."'>".$data['SUB_CATEGORY_NAME']."</option>";
+      $counter=1;
+    }
+    else{
+      echo "<option value='".$data['SUB_CATEGORY_ID']."'>".$data['SUB_CATEGORY_NAME']."</option>";
+    }
   }
 }
 
-if(!empty($_FILES)) {
+elseif(!empty($_FILES) && isset($_POST['cat'])) {
+    
+    $file = $_FILES['up_file']['name'];
+    $file_loc = $_FILES['up_file']['tmp_name'];
+	$file_size = $_FILES['up_file']['size'];
+	$file_type = $_FILES['up_file']['type'];
+    $category = $_POST['cat'];
+    $dir_base = "../../img/app/".$category. "/";
+
+    $file = preg_replace('/[^A-Za-z0-9\._-]/', '', $file); // Removes special chars
+    $file = str_replace(' ', '_', $file); // Replaces all spaces with hyphens.
+    $file = str_replace('-', '_', $file); // Replaces all spaces with hyphens.
+
+    //$final_file='SWS_'.strtoupper($file);
+    $final_file='SWS_'.$file;
+
+    $validextensions = array("jpeg", "jpg", "png");
+    $temporary = explode(".", $_FILES["up_file"]["name"]);
+    $file_extension = strtolower(end($temporary));
+
+    if (($_FILES["up_file"]["size"] < 100000000000)//Approx. 100kb files can be uploaded.
+        && in_array($file_extension, $validextensions)
+    ){
+        if ($_FILES["up_file"]["error"] > 0){
+            echo "Return Code: " . $_FILES["up_file"]["error"] . "<br/><br/>";
+        }
+
+        //echo $_FILES["file"]["name"] . " <span id='invalid'>Already exists.<br/><b>Uploaed  with new name.</b></span> ";
+        $sourcePath = $_FILES['up_file']['tmp_name']; // Storing source path of the file in a variable
+
+        //$file_rename = $final_file."_".rand(1000,100000);
+        $targetPath = $dir_base.$final_file; // Target path where file is to be stored
+        if(move_uploaded_file($sourcePath,$targetPath))
+        {
+
+            $msg='Upload Successfull';
+            $final_fl_sz=round(($_FILES["up_file"]["size"] / 1048576),2) . " MB";
+            echo"<script language='javascript'>document.getElementById('fl_stat').innerHTML  = '$msg';</script>";
+            echo"<script language='javascript'>document.getElementById('fl_name').innerHTML  = '$final_file';</script>";
+            echo"<script language='javascript'>document.getElementById('fl_size').innerHTML  = '$final_fl_sz';</script>";
+
+        }
+    }
+
+    
+}
+elseif(!empty($_FILES) && isset($_POST['submit'])) {
   $file = $_FILES['up_file']['name'];
   $file_loc = $_FILES['up_file']['tmp_name'];
 	$file_size = $_FILES['up_file']['size'];

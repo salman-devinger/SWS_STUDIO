@@ -105,7 +105,7 @@ include '../config.php';
             <div class="form-group">
               <label class="col-sm-2 control-label">Category</label>
               <div class="col-sm-8">
-              <select class="form-control select2" style="width: 100%;" id= "cat" name="cat" value="">
+              <select class="form-control select2" style="width: 100%;" id= "cat" name="cat" value="" required>
                 <option selected="selected">Category</option>
                 <?php
                     $ser_con=mysqli_connect($dbhost, $dbuser, $dbpass, $dbname)
@@ -127,7 +127,7 @@ include '../config.php';
             <div class="form-group">
               <label class="col-sm-2 control-label">Sub-Category</label>
               <div class="col-sm-8">
-              <select class="form-control select2" style="width: 100%;" id= "sub_cat" name="sub_cat" value="">
+              <select class="form-control select2" style="width: 100%;" id= "sub_cat" name="sub_cat" value="" required>
                 <option>Sub-Category</option>
               </select>
               </div>
