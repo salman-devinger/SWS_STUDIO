@@ -26,9 +26,9 @@ body {
 }
 
 
-/* Set new CSS*/
+/* Set new CSS #00994f */
 #flipkart-navbar {
-    background-color: #00994f;
+    background-color: #15af55;
     color: #FFFFFF;
 }
 
@@ -50,9 +50,19 @@ body {
 }
 
 .flipkart-navbar-button {
-    background-color: #ffe11b;
-    border: 1px solid #ffe11b;
-    border-radius: 0 2px 2px 0;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 0 0 0 0;
+    color: #565656;
+    padding: 10px 0;
+    height: 43px;
+    cursor: pointer;
+}
+
+.flipkart-navbar-button2 {
+    background-color: #ebe9e9;
+    border: 1px solid #ebe9e9;
+    border-radius: 2px 0 0 2px;
     color: #565656;
     padding: 10px 0;
     height: 43px;

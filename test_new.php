@@ -36,7 +36,18 @@
         $(document).ready( function() {
             $('#myCarousel').carousel({
                 interval:   1000
-            });   
+            });
+            $(".carousel").swipe({
+
+                swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+                    if (direction == 'left') $(this).carousel('next');
+                    if (direction == 'right') $(this).carousel('prev');
+
+                },
+                allowPageScroll:"vertical"
+
+            });
             var clickEvent = false;
             $('#myCarousel').on('click', '.nav a', function() {
                     clickEvent = true;
@@ -75,6 +86,17 @@
     opacity:0.95;
 }*/
 body { padding-top: 0px; }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 #myCarousel .nav a small {
     display:block;
 }
@@ -157,7 +179,11 @@ body { padding-top: 0px; }
     
       <br/>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" >
         
@@ -182,7 +208,15 @@ body { padding-top: 0px; }
           </div><!-- End Item -->
                   
         </div><!-- End Carousel Inner -->
-  
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
       </div><!-- End Carousel -->
       <br/>
   
@@ -191,8 +225,56 @@ body { padding-top: 0px; }
   
     <hr class="mt-2 mb-5">
 -->
-    <div class="row text-center text-lg-left">
+    <div class="row text-center no-gutters text-lg-left">
   
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+        <div class="thumbnail">
+            <a href="img/1.jpg" target="_blank">
+              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            </a>
+            <h5>Guitar Classes</h5>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+        <div class="thumbnail">
+            <a href="img/1.jpg" target="_blank">
+              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            </a>
+            <h5>Guitar Classes</h5>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+        <div class="thumbnail">
+            <a href="img/1.jpg" target="_blank">
+              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            </a>
+            <h5>Guitar Classes</h5>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+        <div class="thumbnail">
+            <a href="img/1.jpg" target="_blank">
+              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            </a>
+            <h5>Guitar Classes</h5>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+        <div class="thumbnail">
+            <a href="img/1.jpg" target="_blank">
+              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            </a>
+            <h5>Guitar Classes</h5>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+        <div class="thumbnail">
+            <a href="img/1.jpg" target="_blank">
+              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            </a>
+            <h5>Guitar Classes</h5>
+          </div>
+      </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
             <a href="img/1.jpg" target="_blank">

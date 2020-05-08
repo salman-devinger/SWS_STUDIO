@@ -42,7 +42,7 @@ setTimeout(function() {
 </head>
 
 <body id="page-top">
-<div class="loader"></div>
+    <!-- <div class="loader"></div> -->
 <style>
 .loader {
 	position: fixed;
@@ -57,64 +57,11 @@ setTimeout(function() {
     opacity:0.95;
 }
 </style>
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">SWS STUDIO</a>
-            </div>
+    <?php include './header.php'; ?>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Classes
-    <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-      <li><a href="#">Instrument</a></li>
-      <li><a href="#">Vocals</a></li>
-      <li><a href="#">Dance</a></li>
-      <li><a href="#">Painting</a></li> 
-    </ul>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="members.html">Members</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#">Equipments</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-
-   <header style="background-image:url('img/front3.jpg');" >
-        <div class="header-content" id="about" >
-            <div class="header-content-inner">
-                <h1>Who We Are</h1>
-                <hr/>
-                <h3>The SWS Studio was founded by Rahul Sir, a passionate person of music enthusiasts who view music as a vehicle to change lives. Since our founding, we have given all our efforts for the betterment of students and constantly work to engage people who are willing to serve a dual role as not only music educators, but also as mentors.</h3>
-                <a href="http://fb.com/swsstudio" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a><br/><br/>
-                <a href="http://youtube.com/studiosws" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube&nbsp;</span></a><br/><br/>
-                <a href="http://plus.google.com/studiosws" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-google fa-fw"></i> <span class="network-name">Google&nbsp;&nbsp;</span></a>
-            </div>
-        </div>
-    </header>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Uc5_wR0PuZQ?controls=0&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     
     
  <br/><br/>   
@@ -137,83 +84,96 @@ setTimeout(function() {
         </div>
         <!-- /.row -->
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+        <div class="row text-center no-gutters text-lg-left">
+  
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-        </div>
-        <!-- /.row -->
-<br/>
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-        </div>
-        <!-- /.row -->
-<br/>
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="thumbnail">
+                    <a href="img/1.jpg" target="_blank">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    </a>
+                </div>
             </div>
-        </div>
-        <!-- /.row -->
-<br/>
+            
+            </div>
       
-</div>
+        </div>
 
     
 
