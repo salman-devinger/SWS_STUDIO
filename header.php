@@ -11,6 +11,7 @@
         document.body.style.backgroundColor = "rgba(0,0,0,0)";
     }
 </script>
+<link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
 
 <div id="flipkart-navbar">
     <div class="container">
@@ -44,12 +45,12 @@
         </div>
         <div class="row row2">
             <div class="col-sm-2">
-                <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">SWS STUDIO</span></h2>
-                <h2 style="margin:0px;"><span class="largenav">SWS STUDIO</span></h2>
+                <h2 style="margin:0px; font-family: 'Arizonia';font-size: 42px"><span class="smallnav menu" >SWS Studio</span></h2>
+                <h2 style="margin:0px; font-family: 'Arizonia';font-size: 32px"><span class="largenav">SWS Studio</span></h2>
             </div>
             <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
                 <div class="row">
-                    <button class="flipkart-navbar-button2 col-xs-1">
+                    <button class="flipkart-navbar-button2 col-xs-1" onclick="openNav()">
                         <i class="glyphicon glyphicon-align-justify"></i>
                     </button>
                     <button class="flipkart-navbar-button col-xs-1">

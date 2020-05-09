@@ -183,27 +183,28 @@ body { padding-top: 0px; }
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" >
         
           <div class="item active">
-            <img src="https://clubrunner.blob.core.windows.net/00000008602/Images/Kayako/2017-carousel/Join-Leaders-Alt1.jpg">
+            <img src="img/poster/online_class.png">
              
           </div><!-- End Item -->
    
            <div class="item ">
-            <img src="https://clubrunner.blob.core.windows.net/00000008602/Images/Kayako/2017-carousel/Join-Leaders-Alt1.jpg">
+            <img src="img/poster/keyboard.png">
              
           </div><!-- End Item -->
           
           <div class="item ">
-            <img src="https://clubrunner.blob.core.windows.net/00000008602/Images/Kayako/2017-carousel/Join-Leaders-Alt1.jpg">
+            <img src="img/poster/online_class.png">
              
           </div><!-- End Item -->
           
           <div class="item ">
-            <img src="https://clubrunner.blob.core.windows.net/00000008602/Images/Kayako/2017-carousel/Join-Leaders-Alt1.jpg">
+            <img src="img/poster/keyboard.png">
              
           </div><!-- End Item -->
                   
