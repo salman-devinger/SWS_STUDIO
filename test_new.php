@@ -190,7 +190,7 @@ body { padding-top: 0px; }
         
           <div class="item active">
             <img src="img/poster/online_class.png">
-             
+             <!-- <img src="https://clubrunner.blob.core.windows.net/00000008602/Images/Kayako/2017-carousel/Join-Leaders-Alt1.jpg">-->
           </div><!-- End Item -->
    
            <div class="item ">
@@ -230,96 +230,96 @@ body { padding-top: 0px; }
   
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
         <div class="thumbnail">
-            <a href="img/1.jpg" target="_blank">
-              <img src="img/1.jpg" alt="Lights" style="width:100%">
+            <a href="img/poster/rohit.png" target="_blank">
+              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
             </a>
             <h5>Guitar Classes</h5>
           </div>
