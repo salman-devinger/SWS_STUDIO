@@ -34,6 +34,10 @@
 
      <script type="text/javascript">
         $(document).ready( function() {
+            setTimeout(function() {
+                $(".loader").fadeOut("slow");
+                
+            },2000);
             $('#myCarousel').carousel({
                 interval:   1000
             });
@@ -73,18 +77,18 @@
 <body id="page-top">
 <div class="loader"></div>
 <style>
-/*.loader {
+.loader {
 	position: fixed;
 	left: 0px;
 	top: 0px;
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('img/logo/2.jpg') 50% 50% no-repeat rgb(249,249,249) ;
+	background: url('img/loading.gif') 50% 50% no-repeat rgb(249,249,249) ;
     background-size:contain;
     background-position:center;
     opacity:0.95;
-}*/
+}
 body { padding-top: 0px; }
 
 .row.no-gutters {
@@ -94,7 +98,8 @@ body { padding-top: 0px; }
 .row.no-gutters > [class^="col-"],
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
-  padding-left: 0;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 #myCarousel .nav a small {
@@ -228,100 +233,100 @@ body { padding-top: 0px; }
 -->
     <div class="row text-center no-gutters text-lg-left">
   
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="thumbnail">
             <a href="img/poster/rohit.png" target="_blank">
-              <img src="img/poster/rohit.png" alt="Lights" style="width:100%">
+              <img src="img/poster/rohit.png" class="imgCard" alt="Lights" >
             </a>
-            <h5>Guitar Classes</h5>
+            <h5 class="cardTitle" >Guitar Classes</h5>
           </div>
       </div>
       

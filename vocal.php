@@ -37,12 +37,12 @@
 setTimeout(function() {
 	$(".loader").fadeOut("slow");
     
-},7000);
+},2000);
 </script>
 </head>
 
 <body id="page-top">
-    <!-- <div class="loader"></div> -->
+    <div class="loader"></div>
 <style>
 .loader {
 	position: fixed;
@@ -51,7 +51,7 @@ setTimeout(function() {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('img/logo/2.jpg') 50% 50% no-repeat rgb(249,249,249) ;
+	background: url('img/loading.gif') 50% 50% no-repeat rgb(249,249,249) ;
     background-size:contain;
     background-position:center;
     opacity:0.95;
@@ -60,11 +60,10 @@ setTimeout(function() {
     <?php include './header.php'; ?>
 
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Uc5_wR0PuZQ?controls=0&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/Uc5_wR0PuZQ?controls=0&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     
-    
- <br/><br/>   
+ <br/>
     
  <!-- Page Content -->
     <div class="container">
@@ -89,7 +88,7 @@ setTimeout(function() {
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <div class="thumbnail">
                     <a href="img/1.jpg" target="_blank">
-                    <img src="img/1.jpg" alt="Lights" style="width:100%">
+                    <img src="img/1.jp" alt="Lights" style="width:100%">
                     </a>
                 </div>
             </div>

@@ -13,8 +13,6 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
-
-
 .carousel,
 .item,
 .active {
@@ -28,7 +26,7 @@ body {
 
 /* Set new CSS #00994f */
 #flipkart-navbar {
-    background-color: #15af55;
+    background-color: #f05f40;
     color: #FFFFFF;
 }
 
