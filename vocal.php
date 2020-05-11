@@ -88,7 +88,7 @@ setTimeout(function() {
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <div class="thumbnail">
                     <a href="img/1.jpg" target="_blank">
-                    <img src="img/1.jp" alt="Lights" style="width:100%">
+                    <img src="img/1.jpg" alt="Lights" style="width:100%">
                     </a>
                 </div>
             </div>
