@@ -1,627 +1,923 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+  <title> SWS STUDIO</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/style.css"  type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SWS Studio</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-setTimeout(function() {
-	$(".loader").fadeOut("slow");
-    
-},4000);
-</script>
-</head>
-
-<body id="page-top">
-<div class="loader"></div>
-
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 <style>
+         @media screen and (min-width:1156px) {
+                 .iframe iframe{height:300px!important;margin-top:30px;} 
+             .iframe{padding-right:80px!important;padding-left:80px!important;margin-top: 70px;} 
+           }
+         @media screen and  (min-width: 800px)  {
+           .iframe iframe{height:600px;margin-top:30px;} 
+             .iframe{padding-right:0px;padding-left:0px;margin-top: 30px;}
+            
+          }
+
 /*
-.loader {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url('img/logo/6.jpg') 50% 50% no-repeat rgb(249,249,249) ;
-    background-size:contain;
-    background-position:center;
-    opacity:0.95;
-} */
-</style>
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="index.html">SWS STUDIO</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Classes
-    <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-      <li><a href="#">Instrument</a></li>
-      <li><a href="#">Vocals</a></li>
-      <li><a href="#">Dance</a></li>
-      <li><a href="#">Painting</a></li> 
-    </ul>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="members.html">Members</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#">Equipments</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-<header style="background-image:url('img/front2.jpg');" >
-        <div class="header-content" id="about" >
-            <div class="header-content-inner">
-                <h1>SWS Music Academy</h1>
-                <hr/>
-                <h3>SWS Music has been initiated by Mr Rahul Kumar who is a trained musician and a qualified sound engineer. With over ten years of formal training and practice of various instruments under his guidance ,students have greatly benefitted from his professional qualification and experience.</h3>
-                <a href="https://www.facebook.com/swsstudio" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a><br/><br/>
-                <a href="https://www.youtube.com/user/studiosws" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube&nbsp;</span></a><br/><br/>
-                <a href="https://www.youtube.com/user/studiosws" class="btn btn-primary btn-xl page-scroll"><i class="fa fa-google fa-fw"></i> <span class="network-name">Google&nbsp;&nbsp;</span></a>
-            </div>
-        </div>
-    </header>
-<div class="container">
-
-<!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Gallery
-                    
-                </h2>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">Events By SWS Students</li>
-                </ol>
-            </div>
-        </div>
-
-        <!-- Project One -->
-        <div class="row">
-            <div class="col-md-7">
-                <div class="panel panel-default">
-                <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/y0TQq4MzkZs" frameborder="0" 
-allowfullscreen></iframe>
-</div>
-            </div>
-            </div>
-            <div class="col-md-5">
-                <h3>New Branch Inauguration</h3>
-                <a class="btn btn-primary" data-toggle="modal" data-target="#myModal1">View Pics</i></a>
-                <h4>Performance by SWS Students</h4>
-                <p></p>
-                
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr/>
-
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-7">
-                <div class="panel panel-default">
-                <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/QPLuy3mTQRo" frameborder="0" 
-allowfullscreen></iframe>
-</div>
-            </div>
-            </div>
-            <div class="col-md-5">
-                <h3>Media Coverege</h3>
-                <a class="btn btn-primary" data-toggle="modal" data-target="#myModal2">View Pics</i></a>
-                <h4>SWS Studio in NEWS and Media</h4>
-                <p></p>
-                
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Three -->
-        <div class="row">
-            <div class="col-md-7">
-                <div class="panel panel-default">
-                <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/9jec5ImTmMU" frameborder="0" 
-allowfullscreen></iframe>
-</div>
-            </div>
-            </div>
-            <div class="col-md-5">
-                <h3>WCF Event</h3>
-                <a class="btn btn-primary" data-toggle="modal" data-target="#myModal3">View Pics</i></a>
-                <h4>Fun at WCF</h4>
-                
-                
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Four -->
-        <div class="row">
-
-            <div class="col-md-7">
-                <div class="panel panel-default">
-                <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/vHiWb-AGfIw" frameborder="0" 
-allowfullscreen></iframe>
-</div>
-            </div>
-            </div>
-            <div class="col-md-5">
-                <h3>Ek Prayas</h3>
-                <a class="btn btn-primary" data-toggle="modal" data-target="#myModal4">View Pics</i></a>
-                <h4>Events form an integral part of SWS Music Academy as we believe in inclusion of each session of our society. We are proudly associated with EK PRAYAS a not-for profit institution dedicated to welfare, growth and development of underprivileged and  physically challenged children. Every year, we organize an event just for them where their talent is showcased which is so phenomenal and unbelievable.</h4>
-                <p></p>
-                
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Five -->
-        <div class="row">
-            <div class="col-md-7">
-                <div class="panel panel-default">
-                <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/Xt1lO9tueP4" frameborder="0" 
-allowfullscreen></iframe>
-</div>
-            </div>
-            </div>
-            <div class="col-md-5">
-                <h3>Video Shoot</h3>
-                <a class="btn btn-primary" data-toggle="modal" data-target="#myModal5">View Pics</i></a>
-                <h4>We put together regular shows to share the triumphant spirit of love, joy, peace and harmony. These show are especially organized to promote a sense of self esteem, accomplishment and pride.</h4>
-                <p></p>
-                
-            </div>
-        </div>
-        <!-- /.row -->
-<br/>
-
-
- <!-- Project Six -->
-        <div class="row">
-            <div class="col-md-7">
-                <div class="panel panel-default">
-                <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/XYkPhi28xwc" frameborder="0" 
-allowfullscreen></iframe>
-</div>
-            </div>
-            </div>
-            <div class="col-md-5">
-                <h3>Other Events</h3>
-                <a class="btn btn-primary" data-toggle="modal" data-target="#myModal6">View Pics</i></a>
-                <h4>Performance by SWS students in different Places</h4>
-                <p></p>
-                
-            </div>
-        </div>
-        <!-- /.row -->
-<br/>
-
-</div>
-    <br/>
+ .nav-item{font-size:12px;}
+     .carousel-indicators li {
+      background-color: #333;
+     }
+     .carousel-inner {
+     overflow: hidden;
+      padding:60px 0;height:100%!important;
+     }
+    .destlookup2 {clear: both; position: relative;padding: 10px 10px 10px 10px; display: block; width: 60%; border-radius: 4px;text-decoration: none;
+     min-height: 30px;line-height: 15px;font-size: 15px;margin: 10px 0 3px 0;}
+    .btn_red{background-color:#ff0000;color:white;border:none;}  .btn_red:hover{opacity:0.8}
+    .carousel-item-active{width:100%!important;height:100%!important;}
     
-        
-    
-    <!--begin modal window 1-->
-    
-<div class="modal fade" id="myModal1">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<div class="pull-left">Inauguration Pics</div>
-<button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
-</div>
-<div class="modal-body">
+    .md_header{display:none;} 
+    .blog .col-md-6{margin-bottom:50px!important;}
+    .nav_mob button{float:right;margin-top:5px;}
+    .nav_mob  .navbar-collapse{margin-top:35px}
+    .nav_mob{padding:60px 60px 30px 60px;}
+    .nav_mob .nav-item{padding:10px 20px 10px 10px;background-color:rgba(0,0,0,0.1);margin-top:5px;font-size:18px;font-weight:500;}
+    .navbar-toggler{background-color:#00853c!important;font-size: 1rem}
+    .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      font-size: 30px!important;}*/
 
-<!--begin carousel1-->
-<div id="myGallery1" class="carousel slide" data-interval="false">
-<div class="carousel-inner">
-<div class="item active"> <img src="img/branch/1.jpg" alt="item0">
-
-</div>
-<div class="item"> <img src="img/branch/1.jpg" alt="item1">
-
-</div>
-<div class="item"> <img src="img/branch/2.jpg" alt="item2">
-
-</div>
-<div class="item"> <img src="img/branch/3.jpg" alt="item3">
-
-</div>
-<div class="item"> <img src="img/branch/4.jpg" alt="item4">
-
-</div>
-<div class="item"> <img src="img/branch/5.jpg">
-
-</div>
-<!--end carousel-inner--></div>
-<!--Begin Previous and Next buttons-->
-<a class="left carousel-control" href="#myGallery1" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myGallery1" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
-<!--end carousel 1--></div>
-<!--end modal-body--></div>
-<div class="modal-footer">
-
-<button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>
-<!--end modal-footer--></div>
-<!--end modal-content--></div>
-<!--end modal-dialoge--></div>
-<!--end myModal 1--></div>
-
-
-    
-    <!--begin modal window 2-->
-    
-<div class="modal fade" id="myModal2">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<div class="pull-left">Media Coverage</div>
-<button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
-</div>
-<div class="modal-body">
-
-<!--begin carousel2-->
-<div id="myGallery2" class="carousel slide" data-interval="false">
-<div class="carousel-inner">
-<div class="item active"> <img src="img/news/1.jpg" alt="item0">
-
-</div>
-<div class="item"> <img src="img/news/1.jpg" alt="item1">
-
-</div>
-<div class="item"> <img src="img/news/2.jpg" alt="item2">
-
-</div>
-<div class="item"> <img src="img/news/3.jpg" alt="item3">
-
-</div>
-<div class="item"> <img src="img/news/4.jpg" alt="item4">
-
-</div>
-<div class="item"> <img src="img/news/5.jpg">
-
-</div>
-<!--end carousel-inner--></div>
-<!--Begin Previous and Next buttons-->
-<a class="left carousel-control" href="#myGallery2" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myGallery2" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
-<!--end carousel 2--></div>
-<!--end modal-body--></div>
-<div class="modal-footer">
-
-<button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>
-<!--end modal-footer--></div>
-<!--end modal-content--></div>
-<!--end modal-dialoge--></div>
-<!--end myModal 2--></div>
-
-    
-    
-    <!--begin modal window 3-->
-    
-<div class="modal fade" id="myModal3">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<div class="pull-left">WCF Event Pics</div>
-<button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
-</div>
-<div class="modal-body">
-
-<!--begin carousel3-->
-<div id="myGallery3" class="carousel slide" data-interval="false">
-<div class="carousel-inner">
-<div class="item active"> <img src="img/wcf/1.jpg" alt="item0">
-
-</div>
-<div class="item"> <img src="img/wcf/1.jpg" alt="item1">
-
-</div>
-<div class="item"> <img src="img/wcf/2.jpg" alt="item2">
-
-</div>
-<div class="item"> <img src="img/wcf/3.jpg" alt="item3">
-
-</div>
-<div class="item"> <img src="img/wcf/4.jpg" alt="item4">
-
-</div>
-<div class="item"> <img src="img/wcf/5.jpg">
-
-</div>
-<!--end carousel-inner--></div>
-<!--Begin Previous and Next buttons-->
-<a class="left carousel-control" href="#myGallery3" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myGallery3" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
-<!--end carousel 3--></div>
-<!--end modal-body--></div>
-<div class="modal-footer">
-
-<button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>
-<!--end modal-footer--></div>
-<!--end modal-content--></div>
-<!--end modal-dialoge--></div>
-<!--end myModal 3--></div>
-
-    
-    
-    <!--begin modal window 4-->
-    
-<div class="modal fade" id="myModal4">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<div class="pull-left">Ek Prayas Pics</div>
-<button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
-</div>
-<div class="modal-body">
-
-<!--begin carousel4-->
-<div id="myGallery4" class="carousel slide" data-interval="false">
-<div class="carousel-inner">
-<div class="item active"> <img src="img/prayas/1.jpg" alt="item0">
-
-</div>
-<div class="item"> <img src="img/prayas/1.jpg" alt="item1">
-
-</div>
-<div class="item"> <img src="img/prayas/2.jpg" alt="item2">
-
-</div>
-<div class="item"> <img src="img/prayas/3.jpg" alt="item3">
-
-</div>
-<div class="item"> <img src="img/prayas/4.jpg" alt="item4">
-
-</div>
-<div class="item"> <img src="img/prayas/5.jpg">
-
-</div>
-<!--end carousel-inner--></div>
-<!--Begin Previous and Next buttons-->
-<a class="left carousel-control" href="#myGallery4" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myGallery4" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
-<!--end carousel 4--></div>
-<!--end modal-body--></div>
-<div class="modal-footer">
-
-<button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>
-<!--end modal-footer--></div>
-<!--end modal-content--></div>
-<!--end modal-dialoge--></div>
-<!--end myModal 4--></div>
-
-    
-    
-    <!--begin modal window 5-->
-    
-<div class="modal fade" id="myModal5">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<div class="pull-left">Other Evints Pis</div>
-<button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
-</div>
-<div class="modal-body">
-
-<!--begin carousel5-->
-<div id="myGallery5" class="carousel slide" data-interval="false">
-<div class="carousel-inner">
-<div class="item active"> <img src="img/events/1.jpg" alt="item0">
-
-</div>
-<div class="item"> <img src="img/events/1.jpg" alt="item1">
-
-</div>
-<div class="item"> <img src="img/events/2.jpg" alt="item2">
-
-</div>
-<div class="item"> <img src="img/events/3.jpg" alt="item3">
-
-</div>
-<div class="item"> <img src="img/events/4.jpg" alt="item4">
-
-</div>
-<div class="item"> <img src="img/events/5.jpg">
-
-</div>
-<!--end carousel-inner--></div>
-<!--Begin Previous and Next buttons-->
-<a class="left carousel-control" href="#myGallery5" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myGallery5" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
-<!--end carousel 5--></div>
-<!--end modal-body--></div>
-<div class="modal-footer">
-
-<button class="btn btn-primary" type="button" data-dismiss="modal">Close</button>
-<!--end modal-footer--></div>
-<!--end modal-content--></div>
-<!--end modal-dialoge--></div>
-<!--end myModal 5--></div>
-
-    
-
-
-    
-    <!--Videos-->
-    
-    
-    
-    
-      <div class="bg-primary">
-    
-      <div class="container">
-    
+</style>  
+</head>
+<body>
+<div class="d-md-block d-lg-block d-sm-block"  > 
+  <div class="container-fluid">
     <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center"><br/>
-                <h2 class="section-heading">Our Branches</h2>
-                    <hr class="light" />
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-<i class="fa fa-institution fa-3x sr-contact"></i>
-                    <p>320 Neb Sarai <br/>
-                    IGNOU ROAD<br/>
-                   SAKET , NEW DELHI</p>
+      <div class="tp_blk">
+      
+          <div class="row" align="right">
+	  		<div class="col-lg-7 col-sm-6"></div>
+        <div class="col-lg-3 col-sm-3 d-sm-none d-lg-block" style="letter-spacing: 0.2px;">Email : <strong>swsstudiomail2007@gmail.com</strong></div>
+        <div class="col-lg-2 col-sm-3" style="letter-spacing: 0.2px;">Call : <strong>9818767650</strong></div>
+      </div>
 
-</div>
-            <div class="col-lg-3 col-md-6 text-center">
-<i class="fa fa-institution fa-3x sr-contact"></i>
-                    <p>D2 Freedom Fighter Colony <br/>
-                    IGNOU ROAD<br/>
-                   SAKET , NEW DELHI</p>
-</div>
-            <div class="col-lg-3 col-md-6 text-center">
-<i class="fa fa-institution fa-3x sr-contact"></i>
-                    <p>Mahagun Mordan 2260 <br/>
-                    Sector-78<br/>
-                   NOIDA</p>
-</div>
-
-<div class="col-lg-3 col-md-6 text-center">
-<i class="fa fa-institution fa-3x sr-contact"></i>
-                    <p>A29 <br/>
-                    Sector-28<br/>
-                   FARIDABAD</p>
-</div>
-            
-            
-        </div>
-    
+     </div>
     </div>
-    <br/><br/>
+</div>
+</div>
+<div class="d-md-none d-lg-block d-sm-none"  >
+<div class="lgo_blk">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6" style="padding-left: 0px;padding-right: 0px;" align="left"><a class="navbar-brand" href="index.html"> <img src="images/logo.png" /></a></div>
+    <div class="col-sm-6" style="padding-left: 0px;padding-right: 0px;" align="right">
+      <div class="lgo_icn">
+        <a href="#"><span><i class="far fa-clock"></i></span>
+        <div>Need Today</div></a>
+      </div>
+      <div class="lgo_icn">
+        <a href="#"><span><i class="fas fa-phone-alt"> </i></span>
+        <div>Help Center</div></a>      
+      </div>
     </div>
-    <!--end Videos-->
+    </div>
+  </div>
+</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="mai_mnei" align="Center">
+      <div class="mai_mne"><a href="music_classes.html">ONLINE TEACHING</a></div>
+       <div class="mai_mne"><a href="audio_studio.html">AUDIO PRODUCTION</a></div>
+      <div class="mai_mne"><a href="video_studio.html">VIDEO PRODUCTION</a></div>
+      <div class="mai_mne"><a href="relaxing_music.php">RELAXING MUSIC</a></div>
+      <div class="mai_mne"><a href="best_event_planner.php">BEST EVENT PLANNER</a></div>
+       <div class="mai_mne"><a href="jam_pad.php">JAM PAD</a></div>
+      <div class="mai_mne"><a href="learn_on_demand.php">LEARN ON DEMAND</a></div>
+    </div>
+   </div>
+ </div>
+</div>
+
+  <nav class="navbar nav_mob  d-md-block d-lg-none d-sm-block">
+ <a class="navbar-brand" href="index.html"> <img src="images/logo.png" /></a>
+  <button class="navbar-toggler mr-auto btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav">
+         <li class="nav-item ">
+   <a href="contact.php">Contact Us</a>
+      </li>
+      
+      <li class="nav-item">
+        <a href="music_classes.html">ONLINE TEACHING</a>
+      </li>
+      <li class="nav-item">
+      <a href="audio_studio.html">AUDIO PRODUCTION</a>
+      </li>
+       <li class="nav-item active">
+      <a href="video_studio.html">VIDEO PRODUCTION</a>
+      </li>
+      <li class="nav-item">
+      <a href="relaxing_music.php">RELAXING MUSIC</a>
+      </li>
+      <li class="nav-item">
+        <a href="best_event_planner.php">BEST EVENT PLANNER</a>
+      </li>
+      <li class="nav-item">
+     <a href="jam_pad.php">JAM PAD</a>
+      </li>
+      <li class="nav-item">
+   <a href="learn_on_demand.php">LEARN ON DEMAND</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid" style="padding-right:0px;padding-left:0px;" align="center">
+     
+<div class="row" style="margin-right:0px;margin-left:0px;">
+  <div class="col-lg-2  d-md-none d-lg-block d-sm-none">
+    <div style="padding-top:5px;height: 500px;overflow-y: hidden;"><img src="./images/side_blue.jpeg" width="100%" /></div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-8" style="width:100%!important">
+    <iframe  src="https://www.youtube.com/embed/Rl5LurEOIxo?rel=0&amp;autoplay=1&mute=0&loop=1" width="100%" height="500px" frameborder="0" allowfullscreen  ></iframe>
+  </div>
+  <div class="col-lg-2 d-md-none d-lg-block d-sm-none">
+    <div style="padding-top:5px;height: 500px;overflow-y: hidden;"><img src="./images/side_blue.jpeg" width="100%" /></div>
+  </div>
+</div>
+</div>
+<div class="container-fluid img_mar" style="padding-right:0px;padding-left:0px;"> 
+<div class="row" style="margin-left:0px;margin-right:0px;">
+    <div class="col-sm-12 col-md-6 col-lg-4 order-lg-1 order-1 ">
+      <div class="blk_shbd">  <a href="wedding_choreography.html">  <img src="./images/main6.jpeg" width="100%" > </a> </div>
+    </div>  
+    <div class="col-sm-12 col-md-6 col-lg-4 order-lg-2 order-3  ">
+          <div class="blk_shbd">  <a href="music_classes.html">  <img  src="./images/main1.jpeg" width="100%" />  </a> </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 order-lg-3  order-2">
+       <div class="blk_shbd"> <a href="teacher_classes.html"> <img src="./images/main3.jpeg" width="100%" /> </a> </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 order-lg-4  order-6  ">
+      <div class="blk_shbd"> <a href="video_studio.html">  <img src="./images/main4.jpeg" width="100%" /> </a> </div>
+    </div>
     
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>DOWNLOAD OUR ANDROID APP!</h2>
-                <a href="https://play.google.com/store/apps/details?id=com.salmanapp.swsstudio&hl=en" class="btn btn-default btn-xl sr-button">Download Now!</a>
-            </div>
-        </div>
-    </aside>
-    <br/><br/>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to learn with us in such a cool and technical environment ? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-institution fa-3x sr-contact"></i>
-                    <p>320 Neb Sarai <br/>
-                    IGNOU ROAD<br/>
-                   SAKET , NEW DELHI</p>
+    <!--Slider in images-->
+ 
+    <div class="col-sm-12 col-md-12 d-lg-none d-sm-block order-lg-5 order-5  " style="margin-top:30px;margin-bottom:30px;"> 
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="roboto_th"> <img src="./images/banslider1.jpg" width="100%">  </div>
+    </div>
+    <div class="carousel-item">
+     <div class="roboto_th"><img src="./images/banslider2.jpg" width="100%"> </div>
+    </div>
+    <div class="carousel-item">
+     <div class="roboto_th">   <img src="./images/banslider3.jpg" width="100%">  </div>
+    </div>
+    <div class="carousel-item">
+     <div class="roboto_th ">  <img src="./images/banslider4.jpg" width="100%">   </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ </div> 
 
-                </div>
-                <div class="col-lg-4  text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>+91- 9818767650 <br/>
-                    +91- 1165908090 <br/>
-                    swsstudio2007@gmail.com</p>
-                </div>
-               
-              </div>
-              
-        </div>
-                
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="service-box">
-                        <a href="#" class="back-to-top" style="display: inline;" ><i class="fa fa-4x fa-arrow-circle-up text-primary sr-icons"></i></a><h3>Back To Top</h3>
+    <div class="col-sm-12 col-md-6 col-lg-4 order-lg-6 order-4 ">
+       <div class="blk_shbd"> <a href="biggest_events.html"> <img src="./images/main2.jpeg" width="100%" /> </a> </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4 order-lg-7  order-7 ">
+       <div class="blk_shbd">  <a href="audio_studio.html"> <img src="./images/main5.jpeg" width="100%" /> </a> </div>
+    </div>
+</div>
+
+</div>
+<div class="container-fluid iframe" style="" align="center"> 
+<div class="row m-0" >
+  <div class="col-lg-6 col-sm-12 col-md-12 ">
+    <iframe src="https://www.youtube.com/embed/O0E6Gj3qWKc?rel=0&amp;" width="100%"  frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-md-12">
+    <iframe src="https://www.youtube.com/embed/vm25-IoF_Bs?rel=0&amp;" width="100%"  frameborder="0" allowfullscreen></iframe>
+  </div>
+ 
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="#" style="text-decoration: none;">
+ <button class="destlookup2 btn_red"> MORE </button></a>
+</div>
+</div>
+</div>
+<div class="container-fluid" style="padding-top: 20px;width:100%;">
+<div class="row" style="padding-top: 20px;"> 
+<div class="col-sm-12  d-lg-block d-sm-none"> 
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="roboto_th"> <img src="./images/banslider1.jpg" width="100%">  </div>
+    </div>
+    <div class="carousel-item">
+     <div class="roboto_th"><img src="./images/banslider2.jpg" width="100%"> </div>
+    </div>
+    <div class="carousel-item">
+     <div class="roboto_th">   <img src="./images/banslider3.jpg" width="100%">  </div>
+    </div>
+    <div class="carousel-item">
+     <div class="roboto_th ">  <img src="./images/banslider4.jpg" width="100%">   </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ </div>
+ </div> 
+</div>
+<br> 
+<div class="container-fluid">
+            <div class="row blog">
+              <div style="padding:10px 0px 0px 0px;width:100%" align="center"> <h4>TRENDING NOW</h4>  </div> 
+                <div class="col-md-12">
+                    
+                  <!--  <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                            <li data-target="#blogCarousel" data-slide-to="2"></li>
+                            <li data-target="#blogCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                    <a href="trending_now.html"> <img width="100%" src="./images/trending1.jpg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Tabla</p></a>
                     </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                                        <a href="trending_now.html"> <img width="100%" src="./images/trending14.jpeg" alt="Card image cap">
+                                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Singing</p></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                     <a href="trending_now.html"> <img width="100%" src="./images/trending2.jpeg" alt="Card image cap">
+                     <p class="text-center" style="padding-top: 10px;font-weight: bold;">Singing</p></a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                                        <a href="trending_now.html"> <img width="100%" src="./images/trending13.jpeg" alt="Card image cap">
+                                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Singing</p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                    <div class="blk_shbdd">
+                                    <a href="trending_now.html"> <img width="100%" src="./images/trending3.jpeg" alt="Card image cap">
+                                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Drum</p></a>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                    <div class="blk_shbdd">
+                                    <a href="trending_now.html"> <img width="100%" src="./images/trending15.jpeg" alt="Card image cap">
+                                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Drum</p></a>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                    <div class="blk_shbdd">
+                                    <a href="trending_now.html"><img width="100%" src="./images/trending4.jpeg" alt="Card image cap">
+                                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Violin</p></a>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="trending_now.html"><img width="100%" src="./images/trending5.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Flute</p></a>
+                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                       <div class="blk_shbdd">
+                      <a href="trending_now.html"><img width="100%" src="./images/trending6.jpg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">DJ Course</p></a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="trending_now.html"><img width="100%" src="./images/trending7.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Dance</p></a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                       <a href="trending_now.html"><img width="100%" src="./images/trending8.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Break Dance</p></a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="trending_now.html"><img width="100%" src="./images/trending9.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Classical</p></a>
+                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="trending_now.html"><img width="100%" src="./images/trending10.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Classical</p></a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                       <div class="blk_shbdd">
+                     <a href="trending_now.html"><img width="100%" src="./images/trending11.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Hip Hop</p></a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                                      <a href="trending_now.html"><img width="100%" src="./images/trending12.jpeg" alt="Card image cap">
+                                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Salsa</p></a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                              <div class="owl-slider">
+                <div id="carousel" class="owl-carousel">
+                   <div class="blk_shbdd item">
+                     <a href="trending_now.html"> <img width="100%" src="./images/trending1.jpg" alt="Card image cap">
+                      <p class="text-center" style="padding-top: 10px;font-weight: bold;">Tabla</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="trending_now.html"> <img width="100%" src="./images/trending14.jpeg" alt="Card image cap">
+                     <p class="text-center" style="padding-top: 10px;font-weight: bold;">Singing</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="trending_now.html"> <img width="100%" src="./images/trending2.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Singing</p></a>
+                  </div>
+                   <div class="item blk_shbdd">
+                   <a href="trending_now.html"> <img width="100%" src="./images/trending13.jpeg" alt="Card image cap">
+                  <p class="text-center" style="padding-top: 10px;font-weight: bold;">Singing</p></a>
+                  </div>
+                  <div class="item blk_shbdd"> <a href="trending_now.html"> <img width="100%" src="./images/trending3.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Drum</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                      <a href="trending_now.html"> <img width="100%" src="./images/trending15.jpeg" alt="Card image cap">
+                      <p class="text-center" style="padding-top: 10px;font-weight: bold;">Drum</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="trending_now.html"><img width="100%" src="./images/trending4.jpeg" alt="Card image cap">
+                     <p class="text-center" style="padding-top: 10px;font-weight: bold;">Violin</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                   <a href="trending_now.html"><img width="100%" src="./images/trending5.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Flute</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                     <a href="trending_now.html"><img width="100%" src="./images/trending6.jpg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">DJ Course</p></a>
+                  </div>
+                    <div class="item blk_shbdd">
+                      <a href="trending_now.html"><img width="100%" src="./images/trending7.jpeg" alt="Card image cap">
+                       <p class="text-center" style="padding-top: 10px;font-weight: bold;">Dance</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                   <a href="trending_now.html"><img width="100%" src="./images/trending8.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Break Dance</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="trending_now.html"><img width="100%" src="./images/trending9.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Classical</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                   <a href="trending_now.html"><img width="100%" src="./images/trending10.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Classical</p></a>
+                  </div>
+                    <div class="item blk_shbdd">
+                    <a href="trending_now.html"><img width="100%" src="./images/trending11.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Hip Hop</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                   <a href="trending_now.html"><img width="100%" src="./images/trending12.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Salsa</p></a>
+                  </div>
                 </div>
+                </div>      
+          </div>
+     </div>
+</div>
+
+<div class="container-fluid " style="padding-left:0px;padding-right:0px;">
+<div class="row" style="margin-right: 0px;margin-left: 0px;">
+  <div style="padding:30px 0px 20px 0px;width:100%" align="center"> <h4> MORE OFFERS </h4>  </div> 
+  <div class="col-lg-5 col-sm-6 onlineclass_mob "> <div class="blk_shbdo">  <a href="music_classes.html"> <img class="card-img-top" src="./images/offers1.jpeg" alt="Card image cap"><p class="text-center" style="padding-top: 20px;font-weight: bold;">Sws Studio Music Academy<br />Online Classes</p> </a></div></div>   
+  <div class="col-lg-7  col-sm-6"> 
+  <div class="row text-center ">
+  <div class="col-lg-6 col-sm-12 " style="padding-bottom:30px;">
+   <div class="blk_shbdo">
+    <a href="relaxing_music.php"><img class="card-img-top" src="./images/offer1.jpg" alt="Card image cap">
+    <p class="text-center" style="padding-top: 20px;font-weight: bold;">Relaxation Music</p></a>
+   </div>
+ </div>  
+ <div class="col-lg-6 d-sm-none d-lg-block ">
+ <div class="blk_shbdo">
+  <a href="best_event_planner.php"><img class="card-img-top" src="./images/offer2.jpg" alt="Card image cap">
+  <p class="text-center" style="padding-top: 20px;font-weight: bold;">Best Event Planner</p></a>
+</div>
+</div> 
+ <div class="col-lg-6  col-sm-12 ">
+  <div class="blk_shbdo">
+   <a href="learn_on_demand.php"><img class="card-img-top" src="./images/offer3.jpg" alt="Card image cap">
+  <p class="text-center" style="padding-top: 20px;font-weight: bold;">Learn On Demand</p></a>
+  </div>
+ </div>     
+ <div class="col-lg-6  d-sm-none d-lg-block">
+  <div class="blk_shbdo">
+  <a href="jam_pad.php"><img class="card-img-top" src="./images/offer4.jpg"  alt="Card image cap">
+  <p class="text-center" style="padding-top: 20px;font-weight: bold;">Jam Pad</p></a>
+  </div>
+ </div> 
+ </div>
+ </div> 
+</div>
+</div>
+
+<div class="container-fluid">
+            <div class="row blog">
+              <div style="padding:50px 0px 0px 0px;width:100%" align="center"> <h4>TEACHERS</h4>  </div> 
+                <div class="col-sm-12">
+                    
+                  <!--  <div id="blogCarousel1" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#blogCarousel1" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel1" data-slide-to="1"></li>
+                            <li data-target="#blogCarousel1" data-slide-to="2"></li>
+                            <li data-target="#blogCarousel1" data-slide-to="3"></li>
+                            <li data-target="#blogCarousel1" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="piano_classes.html"><img class="card-img-top" src="./images/teacher1.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Piano</p></a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                     <a href="flute_classes.html"> <img width="100%" src="./images/teacher2.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Flute</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="vocal_classes.html"> <img class="card-img-top" src="./images/teacher3.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Vocal</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="drum_classes.html"> <img class="card-img-top" src="./images/teacher4.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Drum</p> </a>
+                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="kathak_classes.html"> <img class="card-img-top" src="./images/teacher5.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Kathak</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                       <div class="blk_shbdd">
+                      <a href="yoga_classes.html"> <img class="card-img-top" src="./images/teacher6.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Yoga</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                     <a href="yoga_classes.html"> <img class="card-img-top" src="./images/teacher7.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Guitar</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                         <div class="blk_shbdd">
+                     <a href="guitar_bass_classes.html"> <img class="card-img-top" src="./images/teacher8.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Guitar Bass</p> </a>
+                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="casio_classes.html"> <img class="card-img-top" src="./images/teacher9.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Casio</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                       <div class="blk_shbdd">
+                      <a href="guitar_classes.html"> <img class="card-img-top" src="./images/teacher10.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Guitar</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="music_classes.html"> <img class="card-img-top" src="./images/teacher11.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Music </p></a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                         <div class="blk_shbdd">
+                      <a href="kids_classes.html"> <img class="card-img-top" src="./images/teacher12.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Kids</p> </a>
+                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                          <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="tabla_classes.html"> <img class="card-img-top" src="./images/tabla.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Tabla</p> </a>
+                    </div>
+                                    </div>
+                                   <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                     <a href="dj.html"> <img class="card-img-top" src="./images/dj.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">DJ</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                     <a href="violin_classes.html"> <img class="card-img-top" src="./images/violin.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Violin</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                     <a href="music_production.html"> <img class="card-img-top" src="./images/music_production.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Music Production</p> </a>
+                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                               <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                        <div class="blk_shbdd">
+                      <a href="acqustic.html"> <img class="card-img-top" src="./images/acqustic.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Acoustic</p> </a>
+                    </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-3 col-sm-12">
+                                       <div class="blk_shbdd">
+                      <a href="bollywood_song.html"> <img class="card-img-top" src="./images/bollywood_song.jpeg" alt="Card image cap">
+                        <p class="text-center" style="padding-top: 10px;font-weight: bold;">Bollywood song</p> </a>
+                    </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                             </div>
+                    </div>-->
+                                   <div class="owl-slider">
+                <div id="carousell" class="owl-carousel">
+                   <div class="blk_shbdd item">
+                    <a href="piano_classes.html"><img class="card-img-top" src="./images/teacher1.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Piano</p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="flute_classes.html"> <img width="100%" src="./images/teacher2.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Flute</p> </a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="vocal_classes.html"> <img class="card-img-top" src="./images/teacher3.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Vocal</p> </a>
+                  </div>
+                   <div class="item blk_shbdd">
+                   <a href="drum_classes.html"> <img class="card-img-top" src="./images/teacher4.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Drum</p> </a>
+                  </div>
+                  <div class="item blk_shbdd">
+                     <a href="kathak_classes.html"> <img class="card-img-top" src="./images/teacher5.jpeg" alt="Card image cap">
+                     <p class="text-center" style="padding-top: 10px;font-weight: bold;">Kathak</p> </a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="yoga_classes.html"> <img class="card-img-top" src="./images/teacher6.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Yoga</p> </a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="yoga_classes.html"> <img class="card-img-top" src="./images/teacher7.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Guitar</p> </a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="music_classes.html"> <img class="card-img-top" src="./images/teacher11.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Music </p></a>
+                  </div>
+                  <div class="item blk_shbdd">
+                   <a href="kids_classes.html"> <img class="card-img-top" src="./images/teacher12.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Kids</p> </a>
+                  </div>
+                    <div class="item blk_shbdd">
+                   <a href="tabla_classes.html"> <img class="card-img-top" src="./images/tabla.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Tabla</p> </a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="dj.html"> <img class="card-img-top" src="./images/dj.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">DJ</p> </a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="violin_classes.html"> <img class="card-img-top" src="./images/violin.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Violin</p> </a>
+                  </div>
+                  <div class="item blk_shbdd">
+                    <a href="music_production.html"> <img class="card-img-top" src="./images/music_production.jpeg" alt="Card image cap">
+                    <p class="text-center" style="padding-top: 10px;font-weight: bold;">Music Production</p> </a>
+                  </div>
+                    <div class="item blk_shbdd">
+                     <a href="acqustic.html"> <img class="card-img-top" src="./images/acqustic.jpeg" alt="Card image cap">
+                     <p class="text-center" style="padding-top: 10px;font-weight: bold;">Acoustic</p> </a>
+                  </div>
+                  <div class="item blk_shbdd">
+                   <a href="bollywood_song.html"> <img class="card-img-top" src="./images/bollywood_song.jpeg" alt="Card image cap">
+                   <p class="text-center" style="padding-top: 10px;font-weight: bold;">Bollywood song</p> </a>
+                  </div>
+                </div>
+                </div>   
+          </div>
+     </div>
+</div>
+
+
+<div class="container-fluid iframe" style="" align="center"> 
+<div class="row" style="margin-right:0px;margin-left:0px;">
+  <div class="col-lg-6 col-sm-12 col-md-12">
+    <iframe src="https://www.youtube.com/embed/cwIcAsnQ91c?rel=0&amp;" width="100%" height="350px" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-md-12">
+    <iframe src="https://www.youtube.com/embed/05xFw_YPluU?rel=0&amp;" width="100%" height="350px" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="margin-bottom:50px;">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="teacher_classes.html" style="text-decoration: none;">
+ <button class="destlookup2 btn_red" > MORE </button></a>
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="padding-bottom: 30px;">
+<div class="row">
+    <div class="col-lg-4 col-sm-12 ">
+        <div class="blk_shbdd">
+    <a href="expert_opinion.php"> <img width="100%" src="./images/bottom1.jpeg" alt="Card image cap">  </a>
+      <p class="text-center" style="padding-top: 10px;font-weight: bold;">Expert Opinion</p>
+    </div>
+     </div>
+      <div class="col-lg-4  col-sm-12 ">
+        <div class="blk_shbdd">
+     <a href="weekend_performance.html"> <img width="100%" src="./images/bottom2.jpeg" alt="Card image cap"> </a>
+      <p class="text-center" style="padding-top: 10px;font-weight: bold;">Weekend Performance</p>
+    </div>
+     </div>
+      <div class="col-lg-4  col-sm-12 ">
+        <div class="blk_shbdd">
+     <a href="special_needs.php"> <img width="100%" src="./images/bottom3.jpeg" alt="Card image cap"> </a>
+      <p class="text-center" style="padding-top: 10px;font-weight: bold;">Music Classes for special needs</p>
+    </div>
+     </div>
+</div>
+</div>
+
+
+<div class="container-fluid iframe" style="" align="center"> 
+<div class="row" style="margin-right:0px;margin-left:0px;">
+  <div class="col-lg-6 col-sm-12 col-md-12 ">
+    <iframe src="https://www.youtube.com/embed/XYkPhi28xwc?rel=0&amp;" width="100%" height="350px" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-md-12">
+    <iframe src="https://www.youtube.com/embed/Uc5_wR0PuZQ?rel=0&amp;" width="100%" height="350px" frameborder="0" allowfullscreen></iframe>
+  </div>
+ 
+</div>
+</div>
+
+
+<div class="container-fluid" style="margin-bottom:20px;">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="biggest_events.html" style="text-decoration: none;">
+ <button class="destlookup2 btn_red" > MORE </button></a>
+</div>
+</div>
+</div>
+
+
+
+<div class="container-fluid" style="padding-right:80px;padding-left:80px;margin-bottom:20px;" align="center"> 
+<div class="row" style="margin-right:0px;margin-left:0px;">
+  <div class="col-lg-3 col-sm-12">
+     <div class="blk_shbdd"><a href="director_sws.html"><img src="images/director.jpeg" width="100%" /></a></div>
+  </div>
+  <div class="col-lg-9 col-sm-12 d-sm-none d-md-none d-lg-block">
+     <div align="justify">
+   <h4>Description:</h4>
+   <p>A video description is a piece of metadata that helps YouTube understand the content of a video. Descriptions that are well optimized can lead to higher rankings in YouTube search. ... And writing descriptions with keywords can help viewers find your videos more easily through search.</p>
+  </div>
+  </div>
+ 
+</div>
+</div>
+
+<div class="container-fluid" style="padding-right:80px;padding-left:80px;margin-bottom:20px;" align="center"> 
+<div class="row" style="margin-right:0px;margin-left:0px;">
+     <div class="col-lg-4">
+   
+  </div>
+  <div class="col-lg-4">
+     <div class="blk_shbdd"><img src="images/qr_code.jpg" width="60%" /></div>
+  </div>
+  <div class="col-lg-4">
+   
+  </div>
+ 
+</div>
+</div>
+
+<footer class="page-footer font-small  pt-4 pb-sm-2">
+  <div class="container-fluid text-center text-md-left ">
+    <div class="row">
+       <div class="col-sm-6 text-left">  
+          <h6 class="text-left pl-sm-2"> &nbsp; SIGN UP FOR EMAIL OFFERS & UPDATES </h6>
+        <div class="input-group  ml-sm-2 pt-sm-2">
+      <input class="col-sm-5 py-2 input" type="search" placeholder="EMAIL"  style="border-radius:0px;">
+      <span class="input-group-append ">
+        <button class="btn search text-white swiss721" type="button" style="border-radius:0px; background-color:#f68827!important;top:5px; ">
+           SUBMIT
+        </button>
+      </span>
+</div>
+</div>
+<div class="col-sm-6 text-right"><h6>CONNECT WITH US &nbsp; &nbsp;</h6>
+<div class="row text-white"> <div class="col-sm-12"> <ul class="social-icons social-icons-colored social-icons-circle m-t-50">
+                  <li><a href="#" class="bg-twitter"> <i class="fab fa-twitter"></i> </a></li>
+              <li><a href="#" class="bg-facebook"> <i class="fab fa-facebook-f"></i> </a></li>
+            
+              <li><a href="#" class="bg-pinterest"> <i class="fab fa-pinterest-p"></i> </a> </li>
+              <li><a href="#" class="bg-instagram"> <i class="fab fa-instagram"></i> </a> </li>
+            </ul> </div> </div>
         
-    
-<div class="col-lg-8 col-lg-offset-2 text-center">
-<div id="footer">
-<label>Site Developed and Maintained By:<a href="https://www.linkedin.com/in/salman-devinger/">Salman Khan</a></label>
+ </div>  
+</div> </div>
+<br/>
+<div class="row">
+	  		
+        <div class="col-lg-3 col-sm-6 d-sm-block d-lg-none" style="letter-spacing: 0.2px;margin-left:25px;font-size:20px;"> <strong>swsstudiomail2007@gmail.com</strong></div>
+        <div class="col-lg-2 " style="letter-spacing: 0.2px;"> <strong></strong></div>
+        <div class="col-lg-7 col-sm-6"></div>
+      </div>
+
+<div class="col-sm-12 pt-sm-5 d-sm-none d-md-none d-lg-block"> 
+<div class="navbar navbar-expand-lg navbar-light text-center footer  geometric">
+  <ul class="navbar-nav m-auto">
+      <li class="nav-item active vl">
+        <a class="nav-link" href="#"> About Us</a>
+      </li>
+      <li class="nav-item  active vl">
+        <a class="nav-link" href="#">SWS Team </a>
+      </li>
+      <li class="nav-item active vl">
+        <a class="nav-link" href="#">Careers</a>
+      </li>
+      <li class="nav-item active vl">
+        <a class="nav-link" href="#">Testimonials</a>
+      </li>
+      <li class="nav-item  active vl">
+        <a class="nav-link" href="#">Terms and Conditions</a>
+      </li>
+      <li class="nav-item active vl">
+        <a class="nav-link" href="#">Terms of use </a>
+      </li>
+      <li class="nav-item active vl">
+        <a class="nav-link" href="#">Privacy Policy</a>
+      </li>
+      <li class="nav-item  active vl">
+        <a class="nav-link" href="#">FAQ's</a>
+      </li>
+      <li class="nav-item active vl">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+       <li class="nav-item active vl">
+   <a href="contact.php">Contact Us</a>
+      </li>
+    </ul>
 </div>
-</div>
+ </div> 
+ 
+  <div class="footer-copyright text-center py-1 pt-sm-4 geometric" > All Rights Reserved to Sws Studio Music Academy</div>
+  
+</footer>
+<script type="text/javascript">
+  $('#blogCarousel').carousel({
+    interval: 200
+  });
+  $('#blogCarousel1').carousel({
+    interval: 200
+  });
+</script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script><script  src="./script.js"></script>
+<script src="http://www.youtube.com/player_api"></script>
+<script type="text/javascript">
+var player;
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+function onYouTubePlayerAPIReady() {
+    player = new YT.Player('player', {
+        playerVars: {
+            'autoplay': 1,
+            'controls': 0,
+            'autohide': 1,
+            'wmode': 'opaque',
+            'showinfo': 0,
+            'loop': 1,
+            'playlist': 'MVqAA9_7gR4'
+        },
+        videoId: 'MVqAA9_7gR4',
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+}
 
-    <!-- Plugin JavaScript -->
-    <script src="js/scrollreveal.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
+function onPlayerReady(event) {
+    event.target();
+    $('#text').fadeIn(400);
+}
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-<script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+$(window).scroll(function() {
+   var hT = $('.m-video').height(),
+       wS = $(this).scrollTop();
+   if (wS > hT) {
+      player.pauseVideo();
+   }
+   else {
+      player.playVideo();
+   }
+});
+</script>
+
+
+
+
 </body>
-
 </html>
+
+

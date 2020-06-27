@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css"  type="text/css">
+<link href="https://blogfonts.com/css/aWQ9MTM5NzQwJnN1Yj03NDAmYz1zJnR0Zj1zd3o3MjFsLnR0ZiZuPXN3aXM3MjEtbHQtYnQtNA/Swis721 Lt BT.ttf" rel="stylesheet" type="text/css"/>
+<link href="https://blogfonts.com/css/aWQ9MTMwMjQ0JnN1Yj0yNDQmYz1nJnR0Zj1nZW9tZXRyaWMrNzA2K2JsYWNrK2NvbmRlbnNlZCtidC50dGYmbj1nZW9tZXRyNzA2LWJsa2NuLWJ0/Geometr706 BlkCn BT.ttf" rel="stylesheet" type="text/css"/>
+
+	<title></title>
+<script type="text/javascript">
+$(document).ready(function() {
+  //  Activate the Tooltips
+  $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
+});
+</script>
+	<style type="text/css">
+		.btn,
+.navbar .navbar-nav>a.btn {
+    border-width: 2px;
+    font-weight: 400;
+    font-size: 0.8571em;
+    line-height: 1.35em;
+    margin: 10px 1px;
+    border: none;
+    border-radius: 0.1875rem;
+    padding: 11px 22px;
+    cursor: pointer;
+    background-color: #888888;
+    color: #FFFFFF!important;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active:focus,
+.btn:not(:disabled):not(.disabled).active:focus,
+.btn:active:hover,
+.btn.active:hover,
+ {
+    background-color: #979797;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.btn:hover,
+.navbar .navbar-nav>a.btn:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+}
+
+.btn:disabled,
+.btn:disabled:hover,
+.btn:disabled:focus,
+.btn:disabled:active,
+.btn:disabled.active,
+ {
+    background-color: #888888;
+    border-color: #888888;
+}
+
+.btn:hover,
+.btn:focus,
+.navbar .navbar-nav>a.btn:hover,
+.navbar .navbar-nav>a.btn:focus {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    outline: 0 !important;
+}
+
+.btn:active,
+.btn.active,
+.navbar .navbar-nav>a.btn:active,
+.navbar .navbar-nav>a.btn.active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 !important;
+}
+
+.btn.btn-icon,
+.navbar .navbar-nav>a.btn.btn-icon {
+    height: 2.375rem;
+    min-width: 2.375rem;
+    width: 2.375rem;
+    padding: 0;
+    font-size: 0.9375rem;
+    overflow: hidden;
+    position: relative;
+    line-height: normal;
+}
+
+.btn.btn-icon.btn-lg,
+.navbar .navbar-nav>a.btn.btn-icon.btn-lg {
+    height: 3.6rem;
+    min-width: 3.6rem;
+    width: 3.6rem;
+}
+
+.btn.btn-icon.btn-lg i.now-ui-icons,
+.btn.btn-icon.btn-lg i.fab,
+.navbar .navbar-nav>a.btn.btn-icon.btn-lg i.now-ui-icons,
+.navbar .navbar-nav>a.btn.btn-icon.btn-lg i.fab {
+    font-size: 1.325rem;
+}
+
+.btn.btn-icon:not(.btn-footer) i.now-ui-icons,
+.btn.btn-icon:not(.btn-footer) i.fab,
+.navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) i.now-ui-icons,
+.navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) i.fab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px, -12px);
+    line-height: 1.5626rem;
+    width: 23px;
+}
+
+.btn:not(.btn-icon) .now-ui-icons,
+.navbar .navbar-nav>a.btn:not(.btn-icon) .now-ui-icons {
+    position: relative;
+    top: 1px;
+}
+
+.btn-primary {
+    background-color: #f96332;
+    color: #FFFFFF!important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:active:hover,
+.btn-primary.active:hover {
+    background-color: #fa7a50;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+}
+
+.btn-primary:disabled,
+.btn-primary:disabled:hover,
+.btn-primary:disabled:focus,
+.btn-primary:disabled:active,
+.btn-primary:disabled.active,
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active {
+    background-color: #f96332;
+    border-color: #f96332;
+}
+
+.btn-round {
+    border-width: 1px;
+    border-radius: 30px !important;
+    padding: 11px 23px;
+}
+
+.btn-lg {
+    font-size: 1em;
+    border-radius: 0.25rem;
+    padding: 15px 48px;
+}
+
+.bg-primary {
+    background-color: #f96332 !important;
+}
+
+
+img {
+    max-width: 100%;
+    border-radius: 1px;
+}
+
+.img-raised {
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.profile-page .page-header {
+    min-height: 550px;
+}
+
+.profile-page .photo-container {
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+.profile-page .title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile-page .description,
+.profile-page .category {
+    text-align: center;
+}
+
+.profile-page h5.description {
+    max-width: 700px;
+    margin: 20px auto 75px;
+}
+
+.profile-page .nav-align-center {
+    margin-top: 30px;
+}
+
+.profile-page .content {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.profile-page .content .social-description {
+    display: inline-block;
+    max-width: 150px;
+    width: 145px;
+    text-align: center;
+    margin: 15px 0 0px;
+}
+
+.profile-page .content .social-description h2 {
+    margin-bottom: 15px;
+}
+
+.profile-page .button-container {
+    text-align: center;
+    margin-top: -106px;
+}
+
+.profile-page .collections img {
+    margin-bottom: 30px;
+}
+
+.profile-page .gallery {
+    margin-top: 45px;
+    padding-bottom: 50px;
+}
+
+.profile-page .page-header:before {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section {
+    padding: 70px 0;
+    position: relative;
+    background: #FFFFFF;
+}
+
+.section .row+.category {
+    margin-top: 15px;
+}
+
+.page-header {
+    min-height: 100vh;
+    max-height: 999px;
+    padding: 0;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header>.content {
+    margin-top: 12%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-header:before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header>.container {
+    z-index: 2;
+    padding-top: 12vh;
+    padding-bottom: 40px;
+}
+
+.page-header .page-header-image {
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.page-header footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.page-header .container {
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    position: relative;
+}
+
+.page-header .category,
+.page-header .description {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.page-header:after,
+.page-header:before {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+}
+
+.clear-filter:after,
+.clear-filter:before {
+    display: none;
+}
+
+.clear-filter[filter-color="orange"] {
+    background: rgba(44, 44, 44, 0.2);
+    background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+    background: -o-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+    background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+}
+
+.nav-pills.nav-pills-just-icons .nav-item .nav-link {
+    text-align: center;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    padding: 0;
+    max-width: 80px;
+    min-width: auto;
+    margin-bottom: 4px;
+}
+
+.nav-pills.nav-pills-just-icons .nav-item .nav-link i {
+    line-height: 80px;
+}
+
+.nav-pills:not(.flex-column) .nav-item:not(:last-child) .nav-link {
+    margin-right: 19px;
+}
+
+.nav-pills .nav-item .nav-link {
+    padding: 10px 23px;
+    background-color: rgba(222, 222, 222, 0.3);
+    min-width: 100px;
+    font-weight: 400;
+    text-align: center;
+    color: #444;
+}
+
+.nav-pills .nav-item .nav-link:hover {
+    background-color: rgba(222, 222, 222, 0.3);
+}
+
+.nav-pills .nav-item .nav-link.active,
+.nav-pills .nav-item .nav-link.active:focus,
+.nav-pills .nav-item .nav-link.active:hover {
+    background-color: #9A9A9A;
+    color: #FFFFFF;
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+.nav-pills .nav-item .nav-link:disabled,
+.nav-pills .nav-item .nav-link[disabled] {
+    opacity: .5;
+}
+
+.nav-pills .nav-item i {
+    display: block;
+    line-height: 60px;
+    font-size: 24px;
+}
+
+.nav-pills.nav-pills-primary .nav-item .nav-link.active,
+.nav-pills.nav-pills-primary .nav-item .nav-link.active:focus,
+.nav-pills.nav-pills-primary .nav-item .nav-link.active:hover {
+    background-color: #f96332;
+}
+
+.nav-align-center {
+    text-align: center;
+}
+
+.nav-align-center .nav-pills {
+    display: inline-flex;
+}
+
+</style>
+
+	
+</head>
+<body> 
+<div class="container-fluid">
+  	<div class="row">
+  		<div class="tp_blk">
+	  		<div class="col-sm-12" align="right" style="letter-spacing: 0.2px;">Contact Here : <strong>9999999999</strong></div>
+	   </div>
+    </div>
+</div>
+<div class="lgo_blk">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6" style="padding-left: 0px;padding-right: 0px;" align="left"><a class="navbar-brand" href="index.html"> <h2> SWS Studio</h2></a></div>
+		<div class="col-sm-6" style="padding-left: 0px;padding-right: 0px;" align="right">
+			<div class="lgo_icn">
+				<a href="#"><span><i class="far fa-clock"></i></span>
+				<div>Need Today</div></a>
+			</div>
+			<div class="lgo_icn">
+				<a href="#"><span><i class="fas fa-phone-alt"> </i></span>
+				<div>Help Center</div></a>			
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+  	<div class="mai_mnei" align="Center">
+       <!--<div class="mai_mne"><a href="#">Why SWS Studio</a></div>
+      <div class="mai_mne"><a href="booking.html">Event Booking</a></div>-->
+      <div class="mai_mne"><a href="music_classes.html">ONLINE TEACHING</a></div>
+      <div class="mai_mne"><a href="audio_studio.html">AUDIO PRODUCTION</a></div>
+      <div class="mai_mne"><a href="video_studio.html">VIDEO PRODUCTION</a></div>
+      <div class="mai_mne"><a href="relaxing_music">RELAXING MUSIC</a></div>
+      <div class="mai_mne"><a href="best_event_planner.html">BEST EVENT PLANNER</a></div>
+       <div class="mai_mne"><a href="jam_pad.html">JAM PAD</a></div>
+      <div class="mai_mne"><a href="learn_on_demand.html">LEARN ON DEMAND</a></div>
+    </div>
+   </div>
+ </div>
+
+
+
+
+
+<div class="profile-page sidebar-collapse">
+  <!-- Navbar -->
+  
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="page-header clear-filter" filter-color="orange">
+      <div class="page-header-image" data-parallax="true" style="background-image:url('./images/music5.jpg');">
+      </div>
+      <div class="container text-white">
+        <div class="photo-container">
+          <img src="./images/sid.jpg" alt="">
+        </div>
+        <h3 class="title swiss721  text-white">SID SRIRAM</h3>
+        <p class="category geometric"> Play Back Singer</p>
+        <div class="content">
+          <div class="social-description geometric  text-white">
+            <h2>70k+</h2>
+            <p>Followers</p>
+          </div>
+          <div class="social-description geometric  text-white">
+            <h2>200+</h2>
+            <p>Composing</p>
+          </div>
+          <div class="social-description geometric  text-white">
+            <h2>48</h2>
+            <p>Albums</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="button-container">
+          <a href="#button" class="btn btn-primary btn-round btn-lg">Follow</a>
+          <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Follow me on Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Follow me on Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <h3 class="title swiss721">About me</h3>
+        <h5 class="description geometric" style="font-size:14px;">The slow melody combined with the jazzy rhythm and staccato beats makes for an amazing repeat hearing (start your walk with Sevvizhi Venkadal on your headphones and see how your pace quickens as the song progresses into the faster, ‘Easy come easy go’ chorus).</h5>
+        <div class="row ml-sm-5">
+          <div class="col-md-6 ml-auto mr-auto">
+            <h4 class="title text-center swiss721">My Portfolio</h4>
+            <div class="nav-align-center">
+              <ul class="nav nav-pills nav-pills-primary nav-pills-just-icons" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#profile" role="tablist">
+                    <i class="fas fa-user"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#home" role="tablist">
+                 <i class="fas fa-compact-disc"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#messages" role="tablist">
+                   <i class="fas fa-trophy"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Tab panes -->
+          <div class="tab-content gallery">
+            <div class="tab-pane active" id="home" role="tabpanel">
+              <div class="col-md-10 ml-auto mr-auto">
+                <div class="row collections">
+                  <div class="col-md-6">
+                   
+                  </div>
+                  <div class="col-md-6">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="profile" role="tabpanel">
+              <div class="col-md-10 ml-auto mr-auto">
+                <div class="row collections">
+                  <div class="col-md-6">
+                  
+                  </div>
+                  <div class="col-md-6">
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="messages" role="tabpanel">
+              <div class="col-md-10 ml-auto mr-auto">
+                <div class="row collections">
+                  <div class="col-md-6">
+                   
+                  </div>
+                  <div class="col-md-6">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> </div>
+  
+ 
+   
+
+
+
+</body>
+</html>
